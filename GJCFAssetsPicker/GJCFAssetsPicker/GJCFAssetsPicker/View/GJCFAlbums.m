@@ -14,6 +14,8 @@
 {
     if (self = [super init]) {
         
+        //需要初始化这个容器,Fix : https://github.com/zyprosoft/GJCFAssetsPicker/issues/1
+        self.assetsArray = [[NSMutableArray alloc]init];
         self.assetsGroup = aGroup;
         
     }
